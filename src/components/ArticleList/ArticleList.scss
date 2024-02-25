@@ -1,0 +1,26 @@
+.article-list {
+  width: 100%;
+  min-width: 350px;
+  height: auto;
+  margin-bottom: 100px;
+  & > h1 {
+    width: 289px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  &__main {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .article-list {
+    &__main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+}

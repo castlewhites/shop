@@ -1,0 +1,21 @@
+.mobile-slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .arrow-btn {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    margin-bottom: 55px;
+  }
+  & .prev{
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 500px) {
+  .mobile-slider {
+    display: none;
+  }
+}
